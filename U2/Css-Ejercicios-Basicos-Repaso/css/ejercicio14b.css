@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 95%;
+    background-color: #A8A9A9;
+    overflow: hidden;
+    padding: 10px;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-color: green;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+section {
+    height: 620px;
+    float: left;
+    background-color: yellow;
+    width: 25%;
+}
+
+article {
+    height: 300px;
+    background-color: red;
+    margin-right: 40px;
+    float: right;
+    width: 20%;
+    
+}
+
+footer {
+    height: 300px;
+    float: left;
+    background-color: blue;
+    
+}

@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:fixed;
+
+    font-family: 'Mali';
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.manifesto {
+    margin: 2rem;
+    color:white ;
+    background-color: rgba(20, 20, 20, 0.75) ;
+    padding: 4rem;
+}
+
+
+

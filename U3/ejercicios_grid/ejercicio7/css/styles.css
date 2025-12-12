@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Staatliches";
+    src: url(../fonts/Staatliches-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noto Sans TC";
+    src: url(../fonts/NotoSansTC-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans TC';
+}
+
+
+body{
+    background-color: lightskyblue;
+    
+}
+
+:root{
+    /* --gradiente: linear-gradient(to right, #fe2c80ee, #2f3dffe8); */
+    --rosa: #C6426E;
+    --morado: #642B73;
+    --amarillo: #ffce00;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --icono-anchura: 20px;
+    --icono-altura: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+nav{
+    max-width: 100%;
+    background-color: var(--morado);
+    padding: 10px;
+    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .activa{
+    color: var(--amarillo);
+}
+
+nav a img{
+    width: var(--icono-anchura);
+    height: var(--icono-altura);
+    filter: invert(1);
+}
+
+.h2__flex h2{
+    color: var(--amarillo);
+    font-family: Staatliches;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.imagenes__grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 1fr)); /* 2 columnas, mínimo 140px, máximo 1 */
+    gap: 10px;
+    /* padding: 10px; */
+}
+
+.grande {
+    grid-column: 1 / -1;  /* desde la primera hasta la última columna */
+    width: 100%;           /* ocupa todo el ancho */
+}
+
+.grande1 img {
+    width: 100%;           /* la imagen también ocupa todo el ancho */
+    height: auto;          /* mantiene proporción */
+    display: block;
+}
+
+.grande2 {
+    grid-column: 1 / -1;  /* desde la primera hasta la última columna */
+    width: 100%;           /* ocupa todo el ancho */
+}
+
+.grande2 img {
+    width: 100%;           /* la imagen también ocupa todo el ancho */
+    height: auto;          /* mantiene proporción */
+    display: block;
+}
+
+.producto {
+    background-color: var(--morado);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.producto img {
+    width: 100%;          /* ocupa todo el ancho de la tarjeta */
+    height: auto;         /* mantiene proporción */
+    max-width: 300px;     /* máximo ancho para que no crezca demasiado */
+    object-fit: cover;
+}
+
+.producto > h2{
+    color: white;
+    font-family: Staatliches;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.producto .precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.producto .precio h3{
+    color: var(--amarillo);
+    font-family: Staatliches;
+}
+
+
+footer{
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: var(--morado);
+    color: var(--blanco);
+
+    display: flex;
+    justify-content: center;
+}
+
+footer h2 {
+    font-family: Staatliches;
+}
+
+
+

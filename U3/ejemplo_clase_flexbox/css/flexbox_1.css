@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container{
+    border: 2px dashed black;
+    margin: 50px;
+    height: 650px;
+    width: 90%;
+    max-width: 1000px;
+
+    /* Contenedor flex */
+    display: flex;
+    flex-direction: row;
+
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+
+    /* Alineación en el eje principal */
+    justify-content: space-around;
+    /* Alineación en el eje secundario */
+    align-items: baseline;
+}
+
+.item{
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    line-height: 130px;
+    text-align: center;
+
+    /* flex-grow: 1; */
+    /* flex-wrap: 0; */
+
+    /* Alineación en el eje principal */
+    /* justify-content: space-around; */
+    /* Alineación en el eje secundario */
+    /* aling-items: center */
+    /* align-items: baseline; */
+
+    /* Alineación en las lineas flex si tengo wrap */
+    align-content: flex-end;
+
+}
+
+.item1{
+    background-color: lime;
+    align-self: flex-end;
+    
+}
+
+.item2{
+    background-color: red;
+    /* font-size: 0.7rem; */
+}
+
+.item3{
+    background-color: dodgerblue;
+}
+
+.item4{
+    background-color: fuchsia;
+}
+
+

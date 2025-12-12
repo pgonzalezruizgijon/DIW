@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-image: linear-gradient(to right, #D6B617, #EBE3BD);
+}
+
+.container {
+    max-width: 1000px;
+    height: 95vh;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.07);
+}
+
+header {
+    background-color: #152C55;
+    color: white;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    font-size: 2.3em;
+    letter-spacing: 2px;
+}
+
+.header__nav a {
+    margin-left: 30px;
+    font-size: 1.1em;
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.header__nav a:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    min-height: 300px;
+}
+
+.container-servicios {
+    flex: 2 1 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bloque-servicios {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bloque-servicios__servicio {
+    flex: 1 1 0;
+    padding: 18px 0 18px 0;
+    text-align: center;
+    font-size: 1.4em;
+    transition: filter 0.2s;
+}
+.bloque-servicios__servicio--elem1 { background: #b78351; color: white; }
+.bloque-servicios__servicio--elem2 { background: #727fa6; color: white; }
+.bloque-servicios__servicio--elem3 { background: #a1a7bc; color: white; }
+.bloque-servicios__servicio:hover { filter: brightness(1.05); }
+
+.aside {
+    background: #b78351;
+    color: white;
+    min-width: 270px;
+    max-width: 270px;
+    padding: 28px 24px;
+    font-size: 1.15em;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.aside__tile {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.aside__link {
+    color: white;
+    opacity: 0.85;
+    font-size: 1em;
+}
+.aside__link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.aside ul {
+    margin-left: 16px;
+    margin-top: 4px;
+}
+
+footer {
+    background-color: #364872;
+    color: white;
+    padding: 22px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.08em;
+    opacity: 0.94;
+}
+
+.footer__text {
+    opacity: 0.87;
+    letter-spacing: 1.5px;
+}

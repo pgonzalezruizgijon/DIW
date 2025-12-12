@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container{
+    border: 2px dashed black;
+    margin: 50px;
+    height: 650px;
+    width: 750px;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 1.2rem;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+
+    /* para centrar en vertical el texto */
+    line-height: 130px;
+    text-align: center;
+}
+
+.first {
+    background-color: firebrick;
+    /* Static: El elemento se coloca según el flujo HTML e ignora top, bottom, left, right y z-index */
+    position: static;
+    left: 300px;
+    top: 300px;
+}
+
+.second {
+    background-color: lime;
+    /* Relative: Activa top, bottom, left, right y z-index; el desplazamiento se realiza desde la posición que le corresponde al elemento según el flujo HTML */
+    position: relative;
+    left: 150px;
+    /* top: 300px; */
+}
+
+.third {
+    background-color: dodgerblue;
+    /* Absolute: Activa top, bottom, left, right y z-index */
+    /* - El elemento sale del flujo HTML */
+    /* - El desplazamiento se realiza desde el borde de la ventana del navegador o desde el primer ascendiente que tenga position relative... */
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    z-index: 1;
+}
+
+.fourth {
+    background-color: goldenrod;
+    /* Fixed: Activa top, bottom, left, right y z-index
+       Fija al elemento en pantalla e ignora el posible scroll 
+       Lo Saca del flujo HTML
+       El desplazamiento se realiza respecto al borde de la ventana del navegador siempre*/
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+.fifht {
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+}

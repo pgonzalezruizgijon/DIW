@@ -1,0 +1,23 @@
+h2 {
+    margin-bottom: 2rem;
+    
+}
+
+li {
+    display: inline-table;
+    border: 3px;
+    padding: 1rem;
+    margin: -2px;
+}
+
+li:nth-child(odd) {
+    background-color: orange;
+}
+
+li:nth-child(even) {
+    background-color: mediumseagreen;
+}
+
+a {
+    cursor: crosshair;
+}

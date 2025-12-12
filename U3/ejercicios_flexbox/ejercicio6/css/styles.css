@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #247bf46b, #dc09ab80), url(../img/fondo-pantalla.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact{
+    height: 100vh;
+
+    /* Para centrar en el formulario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__form{
+    max-width: 800px;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact__legend{ /* Contáctanos */
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__field{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact__input{ /* Inputs texto */
+    height: 40px;
+    
+}
+
+.contact__btn{ /* Botón enviar */
+    width: 90px;
+    height: 40px;
+    color: white;
+    border: 0px; 
+    background-image: linear-gradient(to right, #6979E4, #7355B0);
+    font-weight: bold;
+}
+
+.contact__send{
+    margin-left: 430px;
+}
+
+
+#email{
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+#message{
+    width: 450px;
+    height: 140%;
+}
+
+#email_label{
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact{
+        
+    }
+
+    .contact__form{
+        max-width: 800px;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .contact__input{
+        height: 20px;
+    }
+
+    
+}

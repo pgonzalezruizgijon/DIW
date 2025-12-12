@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+
+p, li, input[type="button"]{
+    font-size: 12px;
+}
+
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;           /* separa las tarjetas entre sí */
+    padding: 40px 0;     /* margen arriba y abajo */
+
+}
+
+.card1{
+    background-color: white;
+    width: 200px;
+    height: 280px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.363);
+}
+
+.card2{
+    background-color: #5075FF;
+    color: white;
+    width: 200px;
+    height: 280px;
+    border: 1px solid gray;
+    border-radius: 2px;
+
+    box-shadow: 1px 1px 1px gray;
+    
+}
+
+.card3{
+    background-color: white;
+    width: 200px;
+    height: 280px;
+    border: 1px solid gray;
+    border-radius: 2px;
+
+    box-shadow: 1px 1px 1px gray;
+}
+
+.card1, .card2, .card3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 26px 18px; /* Puedes ajustar estos valores */
+    box-sizing: border-box; /* Asegura que padding no sume al ancho */ 
+}
+
+
+
+.card1 ul, .card2 ul, .card3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="button"] {
+    /* estilos */
+    background-color: #111827;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    border: none;
+}
+
+.card2 input[type="button"] {
+    /* estilos */
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 10px px;
+    border: none;
+}
+
+@media screen and (min-width: 576px) {
+
+body{
+    background-image: linear-gradient(to top, rgb(38, 41, 58)50%, rgb(255,255,255)50%); 
+    height: 100vh;
+}
+
+.cards{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 0px;
+}
+
+
+
+}

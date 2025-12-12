@@ -1,0 +1,36 @@
+.title{
+    text-shadow: 2px 2px 1px #BBBEC6;
+}
+
+p{
+    text-shadow: 2px 6px 1px #e0d2d3;
+}
+
+a{
+    text-shadow: none;
+}
+div{
+    padding: 20px;
+    width: 45%;
+}
+.shady{
+    box-shadow: 8px 8px 4px #35FC35;
+    margin-bottom: 1rem;
+}
+
+.shady2{
+    box-shadow: -6px -6px red;
+}
+
+.shady3{
+    box-shadow: 6px 0px #1E91FC;
+}
+
+.caja{
+    color: #ED5BC0;
+    font-size: 2rem;
+    width: 6rem;
+    height: 4rem;
+    
+    box-shadow: 4px 4px 4px;
+}

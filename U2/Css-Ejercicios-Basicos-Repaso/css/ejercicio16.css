@@ -1,0 +1,13 @@
+body{
+    background-image: linear-gradient(to right, #26D0CE, #1A2980);
+}
+
+.columns{
+    column-width: 10rem;
+}
+
+.threecolumns{
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: thick dotted yellow;
+}
