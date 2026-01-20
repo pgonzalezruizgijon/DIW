@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    border: 5px solid black;
+    margin: 100px auto;
+    background-color: darkkhaki;
+
+    width: 80%;
+    max-width: 1000px;
+
+    display: grid;
+    gap: 20px;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5] 1fr  [line6];
+    grid-template-rows: repeat(4, 150px);
+}
+
+.grid-item {
+    background-color: cornflowerblue;
+    grid-column: 2 / span 3; /* Es lo mismo que 2 / 5 */
+    grid-row: 2 / span 2;
+
+    /* Creamos grid anidado */
+    display: grid;
+    /* gap: 5px; */
+    /* grid-template-columns: repeat(2, 500px); */
+
+    /* Prueba subgrid */
+    /* Es un grid totalmente dependiente del grid padre. Hereda dimensiones, gap y etiquetas grid */
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+}
+
+.grid-item1 {
+    background-color: lemonchiffon;
+    /* grid-column: 2 / 3; */
+    grid-column:  line2 / line5;
+    grid-row: 1 / 2;
+}
+
+.grid-item2 {
+    background-color: tomato;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 300px;
+}

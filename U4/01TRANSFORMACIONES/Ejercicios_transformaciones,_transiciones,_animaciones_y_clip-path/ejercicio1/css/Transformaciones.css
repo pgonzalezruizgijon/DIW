@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: green; */
+    border: 2px solid black;
+}
+
+.element_block{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+label {
+    width: 100px; /* Ancho fijo para que todas las etiquetas midan lo mismo */
+    margin-right: 20px;
+}
+
+.element {
+
+}
+
+.translate {
+    transition: transform 5s;
+}
+
+.container:hover .translate {
+    transform: translate(700px, 0px);
+}
+
+.rotate {
+    transition: transform 5s;
+}
+
+.container:hover .rotate {
+    transform: rotate(5turn)
+}
+
+.scaleX {
+    transition: transform 5s;
+}
+
+.container:hover .scaleX {
+    transform: scaleX(200%);
+}
+
+.scaleY {
+    transition: transform 5s;
+}
+
+.container:hover .scaleY {
+    transform: scaleY(150%);
+}
+
+.scale {
+    transition: transform 5s;
+}
+
+.container:hover .scale {
+    transform: scale(150%);
+}
+
+.skewX {
+    transition: transform 5s;
+}
+
+.container:hover .skewX {
+    transform: skewX(40deg);
+}
+
+.skewY {
+    transition: transform 5s;
+}
+
+.container:hover .skewY {
+    transform: skewY(40deg);
+}
+
+.skew {
+    transition: transform 5s;
+}
+
+.container:hover .skew {
+    transform: skew(40deg, 30deg);
+}

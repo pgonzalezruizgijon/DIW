@@ -1,0 +1,46 @@
+.nav-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.nav-button {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    font-family: serif;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.nav-button:hover {
+    background-color: #eee;
+    color: #333;
+}
+
+.btn-premium {
+            margin-top: 20px;
+            /* Estética del botón (Colores y forma) */
+            background: linear-gradient(90deg, #a855f7, #ec4899, #3b82f6);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 20px 60px;
+            text-transform: uppercase;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+            /* Define qué tan rápido se mueve al pulsar y soltar */
+            transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+        }
+
+        .btn-premium:active {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }

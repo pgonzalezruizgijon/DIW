@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    outline: 2px solid darkslategray;
+    margin: 50px auto;
+    height: 600px;
+    width: 800px;
+    padding: 10px;
+}
+
+.element {
+    background-color: chartreuse;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* TRANSLATE */
+/* Unidades para utilizar en translate: % y px */
+/* 100%: /* Desplaza el 100% de su tamaño, si mide 150px lo desplaza 150px */
+.translate {
+    /* Estado inicial */
+    /* transform: translate(0px, 0px); */
+
+    transition: transform 3s;
+}
+
+.rotate {
+    /* Estado inicial */
+    transform: rotate(0deg);
+    transform-origin: top left; /* Punto donde se produce la transformación*/
+    transition: transform 2s;
+}
+
+.mixed {
+    /* transform: rotate(360deg) translate(400px, -200px); */
+    transition: transform 2s 1s; /* Segundo valor delay */
+}
+
+.scale {
+    transform: scale(0%);
+    /* transition: all 2s; */
+    /* transition: transform 2s, background-color 4s; */
+    /* transition: transform 4s ease-out; */
+    transition-property: transform;
+    transition-duration: 2s; /* s o ms */
+    transition-delay: 1s;
+    /* transition-timing-function: ; Velocidad */
+}
+
+.skew { /* Tira de las esquinas */
+    transform: skew(0deg, 00deg);
+    transition: transform 2s;
+}
+
+/* TRIGGERS PARA LAS TRANSICIONES */
+.container:hover .translate {
+    /* Estado final */
+    transform: translate(300px, 100px);
+}
+
+.container:hover .rotate {
+    /* Estado final */
+    transform: rotate(2turn);
+}
+
+.container:hover .mixed {
+    /* Estado final */
+    transform: rotate(360deg) translate(400px, -200px);
+}
+
+.container:hover .scale {
+    /* Estado final */
+    transform: scale(300%);
+    background-color: crimson;
+}
+
+.container:hover .skew {
+    /* Estado final */
+    transform: skew(40deg, 10deg);
+}
