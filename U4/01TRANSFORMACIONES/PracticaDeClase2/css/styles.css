@@ -48,6 +48,8 @@ body {
     margin-top: 80px;
     margin-bottom: 40px;
     position: relative;
+    border-bottom: 4px solid;
+    padding-bottom: 8px;
 }
 
 .picture__paragraph {
@@ -60,7 +62,7 @@ body {
     transform: translate(0, 0) rotate(1turn);
 }
 
-.picture__title::after {
+/* .picture__title::after {
     content: "";
     display: block;
     width: 100%;
@@ -68,4 +70,4 @@ body {
     background-color: white;
 
     margin: 10px auto 0;
-}
+} */

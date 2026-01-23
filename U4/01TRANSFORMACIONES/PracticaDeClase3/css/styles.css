@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.enlace {
+    display: inline-block;
+    background-color: cornflowerblue;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+.enlace > a {
+    color: white;
+}
+
+#activado {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 40px;
+    color: white;
+
+    transition: transform 1s;
+    transform: rotate(0turn);
+}
+
+#activado:target {
+    transform: rotate(1turn);
+}
+
