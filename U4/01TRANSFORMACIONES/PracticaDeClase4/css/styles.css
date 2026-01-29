@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenPrincipal {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Imagen oculta */
+.escondida {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    object-fit: cover;
+
+    transform: translateX(100vw); /* fuera de pantalla */
+    transition: transform 1s ease;
+}
+
+/* Al hacer click */
+#activado:target {
+    transform: translateX(0);
+}
