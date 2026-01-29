@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mates {
+    width: 690px;
+    height: 800px;
+    margin-top: 100px;
+    
+}
+
+#Libro {
+    animation-name: mover-libro;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+}
+
+@keyframes mover-libro {
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+    }
+
+    75% {
+        transform: skewX(200px);
+    }
+
+    to {
+        transform: translateY(-500px);
+    }
+}
