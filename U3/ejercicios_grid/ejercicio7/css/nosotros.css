@@ -76,3 +76,32 @@
     font-size: 1.6rem;
     padding: 0 1rem;
 }
+
+.titulo-nosotros {
+    animation: entradaTitulo 1s ease-in;
+}
+
+.nosotros__imagen {
+    transition: filter .5s ease;
+}
+
+.nosotros__imagen:hover {
+    filter: brightness(1.1); /* Brilla un poco al pasar el ratón */
+}
+
+/* Efecto en los bloques de iconos */
+.bloque {
+    transition: transform .3s ease;
+}
+
+.bloque:hover {
+    transform: scale(1.05);
+}
+
+.bloque__icono {
+    transition: transform .5s ease-in-out;
+}
+
+.bloque:hover .bloque__icono {
+    transform: rotate(10deg); /* El icono se inclina un poco */
+}

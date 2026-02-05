@@ -7,10 +7,34 @@
     --fuentePrincipal: 'Staatliches', cursive; 
 }
 
+/* Previene el scroll horizontal global */
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+/* Las imágenes nunca pueden ser más grandes que su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+* {
+    box-sizing: border-box; /* Fundamental para que el padding no rompa el ancho */
+}
+
 body {
-    background-color: var(--primario);
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    overflow-x: hidden; /* El toque final contra el scroll lateral */
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%; /* Deja un pequeño margen de seguridad a los lados */
+    margin: 0 auto;
 }
 
 .header {
@@ -102,4 +126,117 @@ body {
     text-align: center;
     font-family: var(--fuentePrincipal);
     font-size: 1.8rem;
+}
+
+/* Animaciones */
+@keyframes entradaTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Aplicar a elementos globales */
+.header {
+    animation: aparecer 1s ease-in-out;
+}
+
+.navegacion__enlace {
+    transition: color .3s ease, transform .3s ease;
+}
+
+.navegacion__enlace:hover {
+    transform: scale(1.1); /* Crece un poquito al pasar el ratón */
+}
+
+/* --- Variables de Color --- */
+:root {
+    --primario: #00a8ff;   /* Azul brillante de fondo */
+    --secundario: #6c3483; /* Morado de la navegación */
+    --blanco: #ffffff;
+    --amarillo: #ffce00;
+    --fuentePrincipal: 'Staatliches', cursive;
+}
+
+/* --- Reset para evitar Scroll Horizontal --- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--primario);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%; /* Seguridad para iPhone */
+    margin: 0 auto;
+}
+
+/* --- Header y Logo --- */
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.header__logo {
+    max-width: 30rem;
+}
+
+/* --- Navegación Morada --- */
+.navegacion {
+    background-color: var(--secundario);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .3s ease;
+}
+
+.navegacion__enlace:hover,
+.navegacion__enlace--activo {
+    color: var(--amarillo);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--secundario);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer__texto {
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 0;
 }
