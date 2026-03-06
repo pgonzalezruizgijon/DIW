@@ -1,0 +1,29 @@
+@use 'sass:list';
+$colores: (red, green, blue, violet);
+
+
+header {
+    color: list.nth($colores, 1);
+}
+
+main {
+    color: list.nth($colores, 2);
+}
+
+footer {
+    h4 {
+        color: list.nth($colores, 3);
+    }
+
+
+    a{
+        color: list.nth($colores, 4);
+        &:hover {
+            text-decoration: none;
+        }
+     }
+
+
+     
+
+}

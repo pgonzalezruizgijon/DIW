@@ -1,0 +1,21 @@
+@use "sass:math";
+
+$ancho: 1200px;
+$verde: lime;
+$rojo: red;
+$amarillo: yellow;
+
+.mitad {
+    width: calc($ancho/2);
+    background-color: $verde;
+}
+
+.cuarto {
+    width: calc($ancho/4);
+    background-color: $rojo;
+}
+
+.octavo {
+    width: math.div($ancho, 8);
+    background-color: $amarillo;
+}

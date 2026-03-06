@@ -1,0 +1,32 @@
+/*BEM (Bloque, Elemento, Modificador)*/
+/* Bloque Card */
+.card {
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  color: cadetblue;
+}
+.card--grid {
+  display: grid;
+}
+.card__title {
+  font-size: 3rem;
+  text-align: center;
+}
+.card__img {
+  display: block;
+  width: 100%;
+}
+.card__button {
+  border: 1px solid black;
+  border-radius: 5px;
+  color: chocolate;
+  padding: 1rem;
+}
+.card__button--tomato {
+  color: tomato;
+}
+.card__button--lime {
+  color: lime;
+}
+
+/*# sourceMappingURL=ejercicio13.css.map */

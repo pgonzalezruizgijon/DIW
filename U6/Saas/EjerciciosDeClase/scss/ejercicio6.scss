@@ -1,0 +1,15 @@
+$ancho: 1200px;
+$altura: 600px;
+$color1: violet;
+$color2: cyan;
+
+.contenedor {
+    width: $ancho;
+    background-color: $color1;
+}
+
+.contenedor-con-altura {
+    @extend .contenedor;
+    background-color: $color2;
+    height: $altura;
+}

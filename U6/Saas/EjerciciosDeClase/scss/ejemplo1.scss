@@ -1,0 +1,27 @@
+//Variables
+$color1: #fe0fe0;
+$color2: #caca00;
+$font1: sans-serif;
+$font2: Verdana;
+
+body {
+    font-family: $font2;
+}
+
+h1 {
+    color: $color1;
+    font-family: $font1;
+}
+
+p {
+    color: $color2;
+}
+
+/* Prueba de anidacion con Sass (este comentario si aparece en css) */
+main {
+    div {
+        p{
+            background-color: $color1;
+        }
+    }
+}

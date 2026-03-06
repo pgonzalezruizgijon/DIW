@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.main {
+
+    &__cards{
+       @include m.do-grid(1,1.5rem); // 1 columna, gap de 1.5rem
+       justify-items: center;
+       text-align: center;
+    }
+    
+    &__card {
+        position: relative;
+        margin-bottom: 10rem;
+
+        figure {
+            margin: 0;
+            position: relative;
+        }
+        img {
+            width: 100%;
+            display: block;
+            border: 4px solid v.$white;
+            transition: transform 0.3s ease; // transición suave para la transformación
+            &:hover {
+            transform: translateY(-20px) rotate(5deg) scale(1.3); // se mueve hacia arriba y rota un poco a la izquierda
+            z-index: 10; // para que la tarjeta se superponga a las demás al salir
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3); // sombra más pronunciada para dar efecto "flotante"
+        }
+        }
+        figcaption {
+            font-family: v.$secondaryFont;
+            color: v.$secondaryColor;
+            font-size: v.$tamañoH2;
+            margin-bottom: -15px;
+        }
+    }
+    &__texts {
+            position: absolute;
+            bottom: 1rem;
+            left: 10%;
+            right: 10%;
+            width: auto;
+            transform: translateY(50%);  // centrar horizontalmente
+            background-color: v.$white;
+            padding: 1.5rem 2rem;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+    &__link {
+        text-decoration: none;
+        @include m.btn(v.$secondaryColor, v.$white);
+    }
+
+}

@@ -1,0 +1,13 @@
+$color: violet;
+
+@function partir ($tamaño,$numeroDePartes) {
+    
+    $resultado: calc($tamaño / $numeroDePartes * 1px);
+
+    @return $resultado;
+}
+
+.decimo {
+    background-color: $color;
+    width: partir(1000, 10);
+}

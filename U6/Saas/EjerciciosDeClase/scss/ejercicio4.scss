@@ -1,0 +1,25 @@
+@use 'sass:list';
+@use 'sass:map'; 
+
+$colores: (red, green, blue);
+$tamaños: ("titulo": 30px, "lista": 20px, "sublista": 15px);
+
+ul {
+    li{
+        color: list.nth($colores, 1);
+        font-size: map.get($tamaños,"titulo");
+    }
+
+    ul{
+        li{
+            color: list.nth($colores, 2);
+            font-size: map.get($tamaños,"lista");
+        }
+        ul{
+            li{
+                color: list.nth($colores, 3);
+                font-size: map.get($tamaños,"sublista");
+            }
+        } 
+    }
+}

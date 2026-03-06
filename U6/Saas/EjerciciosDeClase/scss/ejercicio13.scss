@@ -1,0 +1,43 @@
+// Variables
+$main_color: cadetblue;
+$secondary_color: chocolate;
+
+/*BEM (Bloque, Elemento, Modificador)*/
+/* Bloque Card */
+.card {
+    border: 2px solid $secondary_color;
+    border-radius: 10px;
+    color: $main_color;
+    // Más propiedades de ña car
+
+    &--grid {
+        display: grid;
+        // etc...
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        // etc...
+    }
+
+    &__button {
+        border: 1px solid black;
+        border-radius: 5px;
+        color: $secondary_color;
+        padding: 1rem;
+
+        &--tomato {
+            color: tomato;
+        }
+
+        &--lime {
+            color: lime;
+        }
+    }
+}

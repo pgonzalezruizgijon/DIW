@@ -1,0 +1,26 @@
+$ancho: 100px;
+$altura: 50px;
+
+.btn {
+    width: $ancho;
+    height: $altura;
+    border: 1px solid black;
+    color: white;
+    background-color: gray;
+    margin: 5px;
+}
+
+.success {
+    @extend .btn;
+    background-color: green;
+}
+
+.error {
+    @extend .btn;
+    background-color: red;
+}
+
+.warning {
+    @extend .btn;
+    background-color: orange;
+}

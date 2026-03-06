@@ -1,0 +1,40 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.navbar {
+    background-color: v.$primaryColor;
+    margin: 2rem 0;
+    padding: 0.5rem 0;
+
+    &__border {
+        border-top: 2px dashed v.$white;
+        border-bottom: 2px dashed v.$white;
+        padding: 1.5rem;
+    }
+
+    &__container {
+        // Mejora: Crear mixin para flex
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include m.tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__link {
+        color: v.$white;
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url("../fonts/Lato-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 95%;
+}
+
+.header__container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navbar {
+  background-color: #7bd1d7;
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+}
+.navbar__border {
+  border-top: 2px dashed #ffffff;
+  border-bottom: 2px dashed #ffffff;
+  padding: 1.5rem;
+}
+.navbar__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navbar__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navbar__link {
+  color: #ffffff;
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+.navbar__link:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .navbar__link {
+    margin-bottom: 0;
+  }
+}
+
+.socials {
+  margin: 5rem 0;
+  display: flex;
+}
+.socials__links {
+  width: 40px;
+}
+
+.hero__img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.hero img {
+  width: 100%;
+  box-shadow: 0px 15px 20px -10px rgb(68, 68, 68);
+}
+
+.main {
+  margin-top: 7rem;
+}
+.main__parrafos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main__parrafos h1 {
+  margin: 0;
+}
+.main__titulo--rosa {
+  font-family: "Italianno", sans-serif;
+  color: #e082a8;
+}
+.main__titulo--gris {
+  color: #979797;
+  margin-top: 3rem;
+  max-width: 60%;
+  margin-bottom: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .main__titulo--gris {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .main__titulo--gris {
+    max-width: 20%;
+  }
+}
+
+.main__cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  text-align: center;
+}
+.main__card {
+  position: relative;
+  margin-bottom: 10rem;
+}
+.main__card figure {
+  margin: 0;
+  position: relative;
+}
+.main__card img {
+  width: 100%;
+  display: block;
+  border: 4px solid #ffffff;
+  transition: transform 0.3s ease;
+}
+.main__card img:hover {
+  transform: translateY(-20px) rotate(5deg) scale(1.3);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.main__card figcaption {
+  font-family: "Italianno", sans-serif;
+  color: #e082a8;
+  font-size: 3.2rem;
+  margin-bottom: -15px;
+}
+.main__texts {
+  position: absolute;
+  bottom: 1rem;
+  left: 10%;
+  right: 10%;
+  width: auto;
+  transform: translateY(50%);
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main__link {
+  text-decoration: none;
+  background-color: #e082a8;
+  border: 0;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  padding: 1.2rem 3rem;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main__link {
+    width: auto;
+  }
+}
+.main__link {
+  transition: background-color 0.3s;
+}
+.main__link:hover {
+  background-color: rgb(201.9230769231, 50.0769230769, 111.4615384615);
+}
+
+.horarios {
+  color: #ffffff;
+  text-align: center;
+}
+.horarios__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background-color: #7bd1d7;
+  padding-bottom: 2rem;
+}
+.horarios__titulo {
+  padding-bottom: 2rem;
+}
+.horarios__descripcion {
+  max-width: 100%;
+  padding-bottom: 4rem;
+}
+.horarios__tabla {
+  border: 4px solid #e082a8;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #7bd1d7;
+}
+.horarios__thead tr th {
+  background-color: #e082a8;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0;
+  transition: background-color 0.3s;
+}
+.horarios__thead tr th:hover {
+  background-color: rgb(201.9230769231, 50.0769230769, 111.4615384615);
+}
+.horarios__tbody tr td {
+  padding: 1rem 0;
+}
+.horarios__imagen {
+  width: 100%;
+  height: 100vh;
+  margin-top: 5rem;
+  overflow: hidden;
+  position: relative;
+}
+.horarios__imagen__figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.horarios__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */

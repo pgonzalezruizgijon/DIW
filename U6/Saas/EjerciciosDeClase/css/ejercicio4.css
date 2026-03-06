@@ -1,0 +1,14 @@
+ul li {
+  color: red;
+  font-size: 30px;
+}
+ul ul li {
+  color: green;
+  font-size: 20px;
+}
+ul ul ul li {
+  color: blue;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=ejercicio4.css.map */

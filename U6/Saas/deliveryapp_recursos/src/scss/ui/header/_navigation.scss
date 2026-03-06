@@ -1,0 +1,27 @@
+@use '../base/vars' as v;
+@use '../base/mixins' as m;
+
+.navigation {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+
+    @include m.desktop {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+
+    &__link {
+        color: v.$black;
+
+        &--register {
+            @include m.btn(v.$main-color, v.$white);
+        }
+    }
+
+}

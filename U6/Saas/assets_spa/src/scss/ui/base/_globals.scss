@@ -1,0 +1,51 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'sass:color';
+
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    @include m.box-sizing(border-box);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: v.$bodyColor;
+    font-family: v.$mainFont;
+    font-size: 1.6rem;
+}
+
+// Tipografías
+// Podríamos añadir
+
+p {
+    font-size: v.$tamañoP;
+}
+
+h1 {
+    font-size: v.$tamañoH1;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+// Container
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%;
+}

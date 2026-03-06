@@ -1,0 +1,76 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.horarios {
+    color: v.$white;
+    text-align: center;
+
+    &__text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        background-color: v.$primaryColor;
+        padding-bottom: 2rem;
+    }
+
+    &__titulo {
+        padding-bottom: 2rem;
+    }
+
+    &__descripcion {
+        max-width: 100%;
+        padding-bottom: 4rem;
+        
+    }
+
+    &__tabla {
+        border: 4px solid v.$secondaryColor;
+        border-collapse: collapse;
+        width: 100%;
+        background-color: v.$primaryColor;
+        
+    }
+
+    &__thead {
+        tr {
+
+            th {
+                @include m.table-header(v.$secondaryColor, v.$white);
+
+            }
+        }
+    }
+
+    &__tbody {
+        tr {
+            td {
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    &__imagen {
+    width: 100%;
+    height: 100vh;          // Ocupa toda la altura de la ventana
+    margin-top: 5rem;       // Separación con el contenido superior
+    overflow: hidden;
+    position: relative;
+
+    &__figure {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;         // Estira la imagen de arriba a abajo
+      object-fit: cover;    // Mantiene proporción y recorta lo que sobre
+      display: block;
+    }
+  }
+
+}

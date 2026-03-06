@@ -1,0 +1,18 @@
+//1) @use 'ejercicio2-vars' as v;
+// 2) Alias
+// @use 'ejercicio2-vars' as v
+// 3) Con valores por defecto (permiten darle valor a las variables de otro módulo)
+@use 'ejercicio2-vars' as v with (
+    $body-color: lime
+);
+
+body {
+    // background-color: ejercicio2-vars.$body-color;
+    background-color: v.$body-color;
+    font-size: v.$body-font-size;
+}
+
+h1 {
+    color: v.$h1-color;
+    font-size: v.$h1-size;
+}

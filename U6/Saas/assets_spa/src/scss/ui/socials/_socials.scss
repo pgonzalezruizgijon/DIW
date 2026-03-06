@@ -1,0 +1,12 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.socials {
+    margin: 5rem 0;
+    
+    display: flex;
+
+    &__links {
+        width: 40px;
+    }
+}

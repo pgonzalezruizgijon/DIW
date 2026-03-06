@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Sass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+
+        <!-- Bloque logo + redes sociales -->
+        <div class="header__container container">
+            <!-- Logo -->
+            <figure class="header__logo">
+                <img src="build/img/logo.png" class="header__img" alt="logo spa">
+            </figure>
+
+            <!-- Redes sociales -->
+            <nav class="socials">
+                <a href="#" class="socials__links"><img src="build/img/icono_facebook.svg" alt="icono facebook"></a>
+                <a href="#" class="socials__links"><img src="build/img/icono_twitter.svg" alt="icono twitter"></a>
+                <a href="#" class="socials__links"><img src="build/img/icono_instagram.svg" alt="icono instagram"></a>
+                <a href="#" class="socials__links"><img src="build/img/icono_youtube.svg" alt="icono youtube"></a>
+                <a href="#" class="socials__links"><img src="build/img/icono_tiktok.svg" alt="icono tiktok"></a>
+            </nav>
+
+        </div>
+        <!-- Barra de navegación grande -->
+        <div class="navbar">
+            <div class="navbar__border">
+                <nav class="navbar__container container">
+                    <a href="#" class="navbar__link">Inicio</a>
+                    <a href="#" class="navbar__link">Nosotros</a>
+                    <a href="#" class="navbar__link">Servicios</a>
+                    <a href="#" class="navbar__link">Productos</a>
+                    <a href="#" class="navbar__link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero container">
+        <figure class="hero__img">
+            <img src="build/img/hero.jpg" alt="">
+        </figure>
+    </section>
+
+    <!-- Main -->
+     <div class="main">
+        <div class="main__parrafos">
+            <h1 class="main__titulo main__titulo--rosa">bienvenidos/as a nuestro</h1>
+            <h1>SITIO WEB</h1>
+
+            <h2 class="main__titulo main__titulo--gris">Te sentirás como nuevo/a con nuestros masajistas profesionales</h2>
+        </div>
+
+        <div class="main__cards container">
+            <div class="main__card">
+                <figure>
+                    <img src="build/img/servicio_01.jpg" alt="">
+                    <div class="main__texts">
+                        <figcaption>conoce más sobre</figcaption>
+                        <h1>NOSOTROS</h1>
+                        <a href="#" class="main__link">LEER MÁS</a>
+                    </div>
+                </figure>
+            </div>
+            <div class="main__card">
+                <figure>
+                    <img src="build/img/servicio_02.jpg" alt="">
+                    <div class="main__texts">
+                        <figcaption>nuestros</figcaption>
+                        <h1>SERVICIOS</h1>
+                        <a href="#" class="main__link">LEER MÁS</a>
+                    </div>
+                </figure>
+            </div>
+            <div class="main__card">
+                <figure>
+                    <img src="build/img/servicio_03.jpg" alt="">
+                    <div class="main__texts">
+                        <figcaption>nuestros</figcaption>
+                        <h1>SERVICIOS</h1>
+                        <a href="#" class="main__link">LEER MÁS</a>
+                    </div>
+                    </figure>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- HORARIOS -->
+    <section class="horarios">
+        <div class="horarios__text">
+            <h1 class="horarios__titulo">HORARIOS</h1>
+            <p class="horarios__descripcion">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repudiandae consectetur tempore assumenda unde ad delectus libero deleniti, velit alias. Minima velit modi unde quos similique, aspernatur reprehenderit non molestias?
+            </p>
+
+            <table class="horarios__tabla">
+                <thead class="horarios__thead">
+                    <tr class="horarios__fila">
+                        <th class="horarios__celda horarios__celda--header">Día</th>
+                        <th class="horarios__celda horarios__celda--header">De</th>
+                        <th class="horarios__celda horarios__celda--header">Hasta</th>
+                    </tr>
+                </thead>
+                <tbody class="horarios__tbody">
+                    <tr class="horarios__fila">
+                        <td class="horarios__celda horarios__celda--dia">Lunes</td>
+                        <td class="horarios__celda horarios__celda--hora">10:00</td>
+                        <td class="horarios__celda horarios__celda--hora">20:00</td>
+                    </tr>
+                    <tr class="horarios__fila">
+                        <td class="horarios__celda horarios__celda--dia">Martes</td>
+                        <td class="horarios__celda horarios__celda--hora">10:00</td>
+                        <td class="horarios__celda horarios__celda--hora">20:00</td>
+                    </tr>
+                    <tr class="horarios__fila">
+                        <td class="horarios__celda horarios__celda--dia">Miércoles</td>
+                        <td class="horarios__celda horarios__celda--hora">10:00</td>
+                        <td class="horarios__celda horarios__celda--hora">20:00</td>
+                    </tr>
+                    <tr class="horarios__fila">
+                        <td class="horarios__celda horarios__celda--dia">Jueves</td>
+                        <td class="horarios__celda horarios__celda--hora">10:00</td>
+                        <td class="horarios__celda horarios__celda--hora">20:00</td>
+                    </tr>
+                    <tr class="horarios__fila">
+                        <td class="horarios__celda horarios__celda--dia">Viernes</td>
+                        <td class="horarios__celda horarios__celda--hora">10:00</td>
+                        <td class="horarios__celda horarios__celda--hora">20:00</td>
+                    </tr>
+                    <tr class="horarios__fila">
+                        <td class="horarios__celda horarios__celda--dia">Sábado</td>
+                        <td class="horarios__celda horarios__celda--hora">10:00</td>
+                        <td class="horarios__celda horarios__celda--hora">23:00</td>
+                    </tr>
+                    <tr class="horarios__fila">
+                        <td class="horarios__celda horarios__celda--dia">Domingo</td>
+                        <td class="horarios__celda horarios__celda--cerrado" colspan="2">Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="horarios__imagen">
+            <figure class="horarios__figure">
+                <img src="build/img/bg_horarios.jpg" alt="background de horarios">
+            </figure>
+        </div>
+
+    </section>
+
+</body>
+</html>

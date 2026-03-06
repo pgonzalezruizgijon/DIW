@@ -1,0 +1,11 @@
+.contenedor, .contenedor-con-altura {
+  width: 1200px;
+  background-color: violet;
+}
+
+.contenedor-con-altura {
+  background-color: cyan;
+  height: 600px;
+}
+
+/*# sourceMappingURL=ejercicio6.css.map */

@@ -1,0 +1,21 @@
+@mixin crear-grid($filas, $columnas) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    grid-template-rows: repeat($filas, 1fr);
+    gap: 20px
+}
+
+header { 
+  @include crear-grid(4, 2);
+  background-color: violet;
+}
+
+main {
+    @include crear-grid(7, 4);
+    background-color: lime;
+}
+
+footer { 
+  @include crear-grid(12, 3);
+  background-color: aquamarine;
+}

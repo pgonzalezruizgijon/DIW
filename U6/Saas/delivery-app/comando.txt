@@ -1,0 +1,1 @@
+sass --watch deliveryapp_recursos/src/scss:deliveryapp_recursos/build/css

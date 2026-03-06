@@ -1,0 +1,28 @@
+@use "sass:math";
+@use 'sass:string';
+
+$p : 1;
+$anchura: 100;
+@while $p < 6 {
+
+    .ancho-col-#{$p} {
+        width:calc($anchura/($p*2)) + string.unquote(('%'));
+        background-color: green;
+    }
+
+    $p:$p+1;
+}
+
+
+
+// $p : 1;
+// $anchura: 100;
+// @while $p < 6 {
+
+//     .ancho-col-#{$p} {
+//         width:calc($anchura/($p*2));
+//         background-color: green;
+//     }
+
+//     $p:$p+1
+// }
